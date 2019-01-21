@@ -1,0 +1,422 @@
+@@ -0,0 +1,422 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>Frameworks</title>
+  <style>
+</style>
+  <!-- <style>
+    header{
+      background: url("https://api.compargram.com/media/__sized__/images/2018/7/27/94876834d2984fab9a260e70944c306d-crop-c0-5__0-5-400x400.png");
+      background-size: 10;
+      background-position: center;
+      min-height: 500px;
+    }
+    @media screen and (max-width: 670px){
+      header{
+        min-height: 500px;
+      }
+    }
+  </style> -->
+  <style>
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 50%; */
+}</style>
+</head>
+<body>
+        <div style="background-color:black">
+  <!-- navbar -->
+  <!-- <header>
+    <nav class="nav-side navbar-fixed black">
+      <div class="container">
+        <a href="#" class="brand-logo">CPS 530 Project</a>
+        <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+          <i class="material-icons">menu</i>
+        </a>
+        <!<ul class="right hide-on-med-and-down">
+             <li><a href="index.html" >Home</a></li>
+               <li><a href="page2.html" >Installing</a></li>
+                <li><a href="page3.html" >Tutorial</a></li>
+                <li><a href="page4.html" >Conclusion</a></li>
+                <li><a href="page5.html" >Credits</a></li>
+        </ul> -->
+        <!-- <ul class="sidenav grey lighten-2" id="mobile-menu">
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="page2.html" >Installing</a></li>
+             <li><a href="page3.html" >Tutorial</a></li>
+             <li><a href="page4.html" >Conclusion</a></li>
+             <li><a href="page5.html" >Credits</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header> -->
+  <div class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper black">
+            <a href="#!" class="brand-logo">Solar System</a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#sun" class="orange darken-4 waves-effect waves-dark btn"><strong>Sun</strong></a></li>
+              <li><a href="#mercury" class="grey black-text waves-effect waves-dark btn"><strong>Mercury</strong></a></li>
+                <li><a href="#venus"class="amber darken-4 waves-effect waves-dark btn"><strong>Venus</strong></a></li>
+                <li><a href="#earth"class="blue lighten-1 light-green-text text-darken-4 waves-effect waves-dark btn"><strong>Earth</strong></a></li>
+                <li><a href="#mars" class="red accent-4 waves-effect waves-dark btn"><strong>Mars</strong></a></li>
+                <li><a href="#jupiter" class="orange lighten-4 deep-orange-text waves-effect waves-dark btn"><strong>Jupiter</strong></a></li>
+                <li><a href="#saturn" class="yellow lighten-4 black-text waves-effect waves-dark btn"><strong>Saturn</strong></a></li>
+                <li><a href="#uranus" class="cyan lighten-4 blue-text waves-effect waves-dark btn"><strong>Uranus</strong></a></li>
+                <li><a href="#neptune" class="indigo accent-4 waves-effect waves-dark btn"><strong>Neptune</strong></a></li>
+            </ul>
+            <ul class="sidenav grey lighten-2" id="mobile-menu">
+                        <li><a href="#sun" class="orange darken-4 waves-effect waves-dark btn"><strong>Sun</strong></a></li>
+                        <li><a href="#mercury" class="grey black-text waves-effect waves-dark btn"><strong>Mercury</strong></a></li>
+                          <li><a href="#venus"class="amber darken-4 waves-effect waves-dark btn"><strong>Venus</strong></a></li>
+                          <li><a href="#earth"class="blue lighten-1 light-green-text text-darken-4 waves-effect waves-dark btn"><strong>Earth</strong></a></li>
+                          <li><a href="#mars" class="red accent-4 waves-effect waves-dark btn"><strong>Mars</strong></a></li>
+                          <li><a href="#jupiter" class="orange lighten-4 deep-orange-text waves-effect waves-dark btn"><strong>Jupiter</strong></a></li>
+                          <li><a href="#saturn" class="yellow lighten-4 black-text waves-effect waves-dark btn"><strong>Saturn</strong></a></li>
+                          <li><a href="#uranus" class="cyan lighten-4 blue-text waves-effect waves-dark btn"><strong>Uranus</strong></a></li>
+                          <li><a href="#neptune" class="indigo accent-4 waves-effect waves-dark btn"><strong>Neptune</strong></a></li> 
+            </ul>
+            </div>
+        </nav>
+      </div>
+  <!-- parallax -->
+  <!-- <div class="black center">
+        <a href="#sun" class="orange darken-4 waves-effect waves-dark btn"><strong>Sun</strong></a>
+        <a href="#mercury" class="grey black-text waves-effect waves-dark btn"><strong>Mercury</strong></a>
+        <a href="#venus"class="amber darken-4 waves-effect waves-dark btn"><strong>Venus</strong></a>
+        <a href="#earth"class="blue lighten-1 light-green-text text-darken-4 waves-effect waves-dark btn"><strong>Earth</strong></a>
+        <a href="#mars" class="red accent-4 waves-effect waves-dark btn"><strong>Mars</strong></a>
+        <a href="#jupiter" class="orange lighten-4 deep-orange-text waves-effect waves-dark btn"><strong>Jupiter</strong></a>
+        <a href="#saturn" class="yellow lighten-4 black-text waves-effect waves-dark btn"><strong>Saturn</strong></a>
+        <a href="#uranus" class="cyan lighten-4 blue-text waves-effect waves-dark btn"><strong>Uranus</strong></a>
+        <a href="#neptune" class="indigo accent-4 waves-effect waves-dark btn"><strong>Neptune</strong></a>
+  </div> -->
+      <h3 style="text-align:center"class="white-text"></h3>
+  <!-- SUN -->
+  <div class="scrollspy" style="background-color: black">
+        <section class="container section scrollspy" id="sun">
+                <div class="row">
+                  <div class="col s12 l4 offset-l1 pull-l3 ">
+                        <img src="http://www.transparentpng.com/download/sun/bright-sun-transparent-png-0.png" alt = "earth" class="materialboxed" height="500px" width="500px">
+                    </div>
+                    <div class="col s12 l6 offset-l1">
+                            <ul class="white-text" style="font-size: 25px">
+                                <li><h2><strong>SUN</strong></h2></li>
+                                <li>
+                                   <strong style="font-family: 'Times New Roman', Times, serif">Diameter</strong>: 1.391 million kilometers
+                                </li>
+                                <li>
+                                    <strong style="font-family: 'Times New Roman', Times, serif">Age</strong>: 4.6 billion years
+                                </li>
+                                <li>
+                                        <strong style="font-family: 'Times New Roman', Times, serif">Years left</strong>: 5 billion years
+                                </li>
+                                <li>
+                                        <strong style="font-family: 'Times New Roman', Times, serif">Mass</strong>: 1.9885×1030 kg
+                                        </li>
+                                
+                                <li>
+                                        <strong style="font-family: 'Times New Roman', Times, serif">Temperature</strong>: 5,505 C
+                                </li>
+                            </ul>
+                          </div>
+                </div>
+        </section>
+</div>
+    <!-- MERCURY -->
+    <div class="scrollspy" style="background-color: black">
+            <section class="container section scrollspy" id="mercury">
+                    <div class="row">
+                      <div class="col s12 l4 offset-l1 pull-l3 ">
+                            <img src="https://space-facts.com/wp-content/uploads/mercury-transparent.png" alt = "mercury" class="materialboxed" height="500px" width="500px">
+                        </div>
+                        <div class="col s12 l6 offset-l1">
+                                <ul class="white-text" style="font-size: 25px">
+                                    <li><h2><strong>#1: MERCURY</strong></h2></li>
+                                    <li>
+                                       <strong style="font-family: 'Times New Roman', Times, serif">Diameter</strong>: 4,879 kilometers
+                                    </li>
+                                    <li>
+                                        <strong style="font-family: 'Times New Roman', Times, serif">Orbit time</strong>: 88 days
+                                    </li>
+                                    <li>
+                                            <strong style="font-family: 'Times New Roman', Times, serif">Moons</strong>: 0
+                                    </li>
+                                    <li>
+                                            <strong style="font-family: 'Times New Roman', Times, serif">Rotation time</strong>: 58d 15h 30m
+                                    </li>
+                                    <li>
+                                            <strong style="font-family: 'Times New Roman', Times, serif">Distance from the Sun</strong>: 57.91 million km
+                                    </li>
+                                    <li>
+                                            <strong style="font-family: 'Times New Roman', Times, serif">Temperature</strong>: 167 C
+                                    </li>
+                                </ul>
+                              </div>
+                    </div>
+            </section>
+    </div>
+    <!-- VENUS -->
+    <div class="scrollspy" style="background-color: black">
+            <section class="container section scrollspy" id="venus">
+                    <div class="row">
+                      <div class="col s12 l4 offset-l1 pull-l3 ">
+                            <img src="https://vignette.wikia.nocookie.net/thesolarsystem6361/images/6/6e/Venus_surface_spacepedia.png/revision/latest?cb=20180322151813" alt = "venus" class="materialboxed" height="500px" width="500px">
+                        </div>
+                        <div class="col s12 l6 offset-l1">
+                                <ul class="white-text" style="font-size: 25px">
+                                        <li><h2><strong>#2: VENUS</strong></h2></li>
+                                    <li>
+                                       <strong style="font-family: 'Times New Roman', Times, serif">Diameter</strong>: 12,104 kilometers
+                                    </li>
+                                    <li>
+                                        <strong style="font-family: 'Times New Roman', Times, serif">Orbit time</strong>: 225 days
+                                    </li>
+                                    <li>
+                                            <strong style="font-family: 'Times New Roman', Times, serif">Moons</strong>: 0
+                                    </li>
+                                    <li>
+                                            <strong style="font-family: 'Times New Roman', Times, serif">Rotation time</strong>: 116d 18h 0m
+                                    </li>
+                                    <li>
+                                            <strong style="font-family: 'Times New Roman', Times, serif">Distance from the Sun</strong>: 108.2 million km
+                                    </li>
+                                    <li>
+                                            <strong style="font-family: 'Times New Roman', Times, serif">Temperature</strong>: 462 C
+                                    </li>
+                                </ul>
+                                </div>
+                    </div>
+            </section>
+    </div>
+    <!-- BIG DADDY EARTH -->
+  <div class="scrollspy" style="background-color: black">
+        <section class="container section scrollspy" id="earth">
+                <div class="row">
+                  <div class="col s12 l4 offset-l1 pull-l3 ">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Earth_Western_Hemisphere_transparent_background.png" alt = "earth" class="materialboxed" height="500px" width="500px">
+                    </div>
+                    <div class="col s12 l6 offset-l1">
+                            <ul class="white-text" style="font-size: 25px">
+                                    <li><h2><strong>#3: EARTH</strong></h2></li>
+                                <li>
+                                   <strong style="font-family: 'Times New Roman', Times, serif">Diameter</strong>: 12,756 kilometers
+                                </li>
+                                <li>
+                                    <strong style="font-family: 'Times New Roman', Times, serif">Orbit time</strong>: 365 days
+                                </li>
+                                <li>
+                                        <strong style="font-family: 'Times New Roman', Times, serif">Moons</strong>: 1
+                                </li>
+                                <li>
+                                        <strong style="font-family: 'Times New Roman', Times, serif">Rotation time</strong>: 1 day
+                                </li>
+                                <li>
+                                        <strong style="font-family: 'Times New Roman', Times, serif">Distance from the Sun</strong>: 149.6 million km
+                                </li>
+                                <li>
+                                        <strong style="font-family: 'Times New Roman', Times, serif">Temperature</strong>: 13.33 C
+                                </li>
+                            </ul>
+                          </div>
+                </div>
+        </section>
+</div>
+    <!-- MARS -->
+    <div class="scrollspy" style="background-color: black">
+            <section class="container section scrollspy" id="mars">
+                    <div class="row">
+                      <div class="col s12 l4 offset-l1 pull-l3 ">
+                            <img src="https://pngimg.com/uploads/mars_planet/mars_planet_PNG26.png" alt = "mars" class="materialboxed" height="500px" width="500px">
+                        </div>
+                        <div class="col s12 l6 offset-l1">
+                                <ul class="white-text" style="font-size: 25px">
+                                        <li><h2><strong>#4: MARS</strong></h2></li>
+                                    <li>
+                                       <strong style="font-family: 'Times New Roman', Times, serif">Diameter</strong>: 6,779 kilometers
+                                    </li>
+                                    <li>
+                                        <strong style="font-family: 'Times New Roman', Times, serif">Orbit time</strong>: 687 days
+                                    </li>
+                                    <li>
+                                            <strong style="font-family: 'Times New Roman', Times, serif">Moons</strong>: 2
+                                    </li>
+                                    <li>
+                                            <strong style="font-family: 'Times New Roman', Times, serif">Rotation time</strong>: 1d 0h 37m
+                                    </li>
+                                    <li>
+                                            <strong style="font-family: 'Times New Roman', Times, serif">Distance from the Sun</strong>: 227.9 million km
+                                    </li>
+                                    <li>
+                                            <strong style="font-family: 'Times New Roman', Times, serif">Temperature</strong>: -60 C
+                                    </li>
+                                </ul>
+                              </div>
+                    </div>
+            </section>
+    </div>
+    <!-- JUPITER -->
+    <div class="scrollspy" style="background-color: black">
+            <section class="container section scrollspy" id="jupiter">
+                    <div class="row">
+                      <div class="col s12 l4 offset-l1 pull-l3 ">
+                      <img src="https://tachyonaerospace.earth/wp-content/uploads/2017/08/jupiter-transparent-e1503866658835.png" alt = "neptune" class="materialboxed" height="500px" width="500px">
+                        </div>
+                        <div class="col s12 l6 offset-l1">
+                                <ul class="white-text" style="font-size: 25px">
+                                        <li><h2><strong>#5: NEPTUNE</strong></h2></li>
+                                    <li>
+                                       <strong style="font-family: 'Times New Roman', Times, serif">Diameter</strong>: 139,822 kilometers
+                                    </li>
+                                    <li>
+                                        <strong style="font-family: 'Times New Roman', Times, serif">Orbit time</strong>: 12 years
+                                    </li>
+                                    <li>
+                                            <strong style="font-family: 'Times New Roman', Times, serif">Moons</strong>: 67
+                                    </li>
+                                    <li>
+                                            <strong style="font-family: 'Times New Roman', Times, serif">Rotation time</strong>: 0d 9h 6m
+                                    </li>
+                                    <li>
+                                            <strong style="font-family: 'Times New Roman', Times, serif">Distance from the Sun</strong>: 778.5 million km
+                                    </li>
+                                    <li>
+                                            <strong style="font-family: 'Times New Roman', Times, serif">Temperature</strong>: -145 C
+                                    </li>
+                                </ul>
+                              </div>
+                    </div>
+            </section>
+    </div>
+    <!-- SATURN -->
+    <div class="scrollspy" style="background-color: black">
+            <section class="container section scrollspy" id="saturn">
+                    <div class="row">
+                      <div class="col s12 l4 offset-l1 pull-l4 ">
+                            <img src="https://i.imgur.com/UNuT23X.png" alt = "saturn" class="materialboxed" height="350px" width="650px">
+                        </div>
+                        <div class="col s12 l6 offset-l1">
+                                <ul class="white-text" style="font-size: 25px">
+                                <li><h2><strong>#6: SATURN</strong></h2></li>
+                                    <li>
+                                       <strong style="font-family: 'Times New Roman', Times, serif">Diameter</strong>: 116,464 kilometers
+                                    </li>
+                                    <li>
+                                        <strong style="font-family: 'Times New Roman', Times, serif">Orbit time</strong>: 29 years
+                                    </li>
+                                    <li>
+                                            <strong style="font-family: 'Times New Roman', Times, serif">Moons</strong>: 62
+                                    </li>
+                                    <li>
+                                            <strong style="font-family: 'Times New Roman', Times, serif">Rotation time</strong>: 0d 10h 42m
+                                    </li>
+                                    <li>
+                                            <strong style="font-family: 'Times New Roman', Times, serif">Distance from the Sun</strong>: 1.434 billion km
+                                    </li>
+                                    <li>
+                                            <strong style="font-family: 'Times New Roman', Times, serif">Temperature</strong>: -178 C
+                                    </li>
+                                </ul>
+                              </div>
+                    </div>
+            </section>
+    </div>
+    <!-- URANUS -->
+    <div class="scrollspy" style="background-color: black">
+            <section class="container section scrollspy" id="uranus">
+                    <div class="row">
+                      <div class="col s12 l4 offset-l1 pull-l3 ">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Uranus2-transparent.png" alt = "uranus" class="materialboxed" height="500px" width="500px">
+                        </div>
+                        <div class="col s12 l6 offset-l1">
+                                <ul class="white-text" style="font-size: 25px">
+                                        <li><h2><strong>#7: URANUS</strong></h2></li>
+                                    <li>
+                                       <strong style="font-family: 'Times New Roman', Times, serif">Diameter</strong>: 50,724 kilometers
+                                    </li>
+                                    <li>
+                                        <strong style="font-family: 'Times New Roman', Times, serif">Orbit time</strong>: 84 years
+                                    </li>
+                                    <li>
+                                            <strong style="font-family: 'Times New Roman', Times, serif">Moons</strong>: 27
+                                    </li>
+                                    <li>
+                                            <strong style="font-family: 'Times New Roman', Times, serif">Rotation time</strong>: 0d 17h 14m
+                                    </li>
+                                    <li>
+                                            <strong style="font-family: 'Times New Roman', Times, serif">Distance from the Sun</strong>: 2.871 billion km
+                                    </li>
+                                    <li>
+                                            <strong style="font-family: 'Times New Roman', Times, serif">Temperature</strong>: -216 C
+                                    </li>
+                                </ul>
+                              </div>
+                    </div>
+            </section>
+    </div>
+    <!-- NEPTUNE -->
+    <div style="background-color: black">
+            <section class="container section scrollspy" id="neptune">
+                    <div class="row">
+                      <div class="col s12 l4 offset-l1 pull-l3 ">
+                            <img src="https://static1.squarespace.com/static/52c1f91ee4b0a77a50337e61/t/5b4a53766d2a732ab36a998d/1531597702584/neptune-transparent.png" alt = "earth" class="materialboxed" height="500px" width="500px">
+                        </div>
+                        <div class="col s12 l6 offset-l1">
+                                <ul class="white-text" style="font-size: 25px">
+                                        <li><h2><strong>#8: NEPTUNE</strong></h2></li>
+                                    <li>
+                                       <strong style="font-family: 'Times New Roman', Times, serif">Diameter</strong>: 49,244 kilometers
+                                    </li>
+                                    <li>
+                                        <strong style="font-family: 'Times New Roman', Times, serif">Orbit time</strong>: 165 years
+                                    </li>
+                                    <li>
+                                    <strong style="font-family: 'Times New Roman', Times, serif">Moons</strong>: 14
+                                    </li>
+                                    <li>
+                                            <strong style="font-family: 'Times New Roman', Times, serif">Rotation time</strong>: 0d 16h 6m
+                                    </li>
+                                    <li>
+                                            <strong style="font-family: 'Times New Roman', Times, serif">Distance from the Sun</strong>: 4.45 billion km
+                                    </li>
+                                    <li>
+                                            <strong style="font-family: 'Times New Roman', Times, serif">Temperature</strong>: -214 C
+                                    </li>
+                                </ul>
+                              </div>
+                    </div>
+            </section>
+    </div>
+  </div>
+  <!-- parallax -->
+
+  <!-- contact form -->
+
+  <!-- footer -->
+
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+      $('.parallax').parallax();
+      $('.materialboxed').materialbox();
+      $('.scrollspy').scrollSpy();
+    });
+
+  </script>
+</body>
+</html>
