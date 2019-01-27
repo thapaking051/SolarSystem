@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>Current Weather</title>
+  <style>
+</style>
+</head>
+<body>
+    <form action="">
+        <h2 class="center">Enter City</h2><input id="city" type="text" />
+        <button class="btn waves-effect waves-light black" type="button" name="action" onclick="weather()" >Get Weather
+            <i class="material-icons right">send</i>
+        </button>
+    </form>
+    <h3>Data from: https://openweathermap.org/</h3>
+    
+    <section class="container section" id="photos">
+        <div class="row">
+          <div class="col s12 l4">
+                <p id="name"></p>
+                <img id="country" src="">
+                <p id="temp"></p>
+                <img id="tempClip" src="">
+                <p id="wind"></p>
+                <img id="windClip" src="">
+                <p id="weather"></p>
+                <img src="" id="iconHTML" alt="" class="responsive-img">
+                <p id="humidity"></p>
+                <img id="humidClip" src="" >
+          </div>
+          <div class="col s12 l6 offset-l1">
+                
+          </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script>
+        var api1 = "http://api.openweathermap.org/data/2.5/find?q=";
+        var metric = "&units=metric";
+        var id = "&appid=63f84bf0a28e379743bfedbc46ffb8d7"
+        function weather(){
+            var api2=document.getElementById("city").value;
+            $.getJSON(api1+api2+metric+id, function (data) {
+            document.getElementById("name").innerHTML = "City: ".bold() + data.list[0].name + ", " + data.list[0].sys.country;
+            document.getElementById("temp").innerHTML = "Temperature: ".bold() + data.list[0].main.temp + "°C";
+            document.getElementById("wind").innerHTML = "Wind Speed: ".bold() + data.list[0].wind.speed + " m/s";
+            document.getElementById("weather").innerHTML = "Forecast: ".bold() + data.list[0].weather[0].description;
+            document.getElementById("humidity").innerHTML = "Humidity: ".bold() + data.list[0].main.humidity + "%";
+
+            var icon = data.list[0].weather[0].icon;
+            var url = "http://openweathermap.org/img/w/" + icon + ".png";
+            document.getElementById("iconHTML").src=url;
+            
+            document.getElementById("humidClip").src="https://dumielauxepices.net/sites/default/files/humidity-clipart-transparent-644471-2798676.png";
+            document.getElementById("humidClip").style.height="50px";
+            document.getElementById("humidClip").style.width="50px";
+
+            document.getElementById("tempClip").src="https://cdn3.iconfinder.com/data/icons/weather-16/256/Hot_Day-512.png";
+            document.getElementById("tempClip").style.height="50px";
+            document.getElementById("tempClip").style.width="50px";
+
+            document.getElementById("windClip").src="https://dumielauxepices.net/sites/default/files/cloud-clipart-windy-896160-7673347.png";
+            document.getElementById("windClip").style.height="50px";
+            document.getElementById("windClip").style.width="50px";
+
+            var countAPI1="https://www.countryflags.io/";
+            var countAPI2="/shiny/48.png";
+            document.getElementById('country').src=countAPI1+data.list[0].sys.country+countAPI2;
+        });
+        };
+        
+    </script>
+    
+
+
+</body>
+</html>
