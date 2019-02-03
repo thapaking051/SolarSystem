@@ -17,40 +17,49 @@
 <body>
     <form action="">
         <h2 class="center">Enter City</h2><input id="city" type="text" />
-        <button class="btn waves-effect waves-light black" type="button" name="action" onclick="weather()" >Get Weather
+        <button class="btn waves-effect waves-light black" type="button" name="action" onclick="weather()" >Current Weather
             <i class="material-icons right">send</i>
         </button>
+        <button class="btn waves-effect waves-light black" type="button" name="action" onclick="day5()" >5 Day Forecast
+                <i class="material-icons right">send</i>
+        </button>
     </form>
-    <h3>Data from: https://openweathermap.org/</h3>
-    
-    <section class="container section" id="photos">
-        <div class="row">
-          <div class="col s12 l4">
-                <p id="name"></p>
-                <img id="country" src="">
-                <p id="temp"></p>
-                <img id="tempClip" src="">
-                <p id="wind"></p>
-                <img id="windClip" src="">
-                <p id="weather"></p>
-                <img src="" id="iconHTML" alt="" class="responsive-img">
-                <p id="humidity"></p>
-                <img id="humidClip" src="" >
-          </div>
-          <div class="col s12 l6 offset-l1">
-                
-          </div>
-        </div>
+    <p><br><br></p>
+    <section class="container">
+    <div class="contaier center">
+            <div class="row">
+                    <div class="col s2 offset-l4"><img id="country" src=""></div>
+                    <p><br></p>
+                    <div class="col s2 pull-l2"><p id="name"></p></div>
+            </div>
+            <div class="row">
+                    <div class="col s2"><img id="tempClip" src=""></div>
+                    <div class="col s2"><img id="minmaxClip" src=""></div>
+                    <div class="col s2"><img id="windClip" src=""></div>
+                    <div class="col s2"><img id="humidClip" src="" ></div>
+                    <div class="col s2"><img src="" id="iconHTML"></div>
+            </div>
+    </div>
+    <div class="contaier">
+            <div class="row">
+                    <div class="col s2"><p id="temp"></p></div>
+                    <div class="col s2"><p id="minmax"></p></div>
+                    <div class="col s2"> <p id="wind"></p></div>
+                    <div class="col s2"><p id="humidity"></p></div>
+                    <div class="col s2"><p id="weather"></p></div>
+            </div>
+    </div>
     </section>
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script>
         var api1 = "http://api.openweathermap.org/data/2.5/find?q=";
+        var day5api = "http://api.openweathermap.org/data/2.5/forecast?q=";
         var metric = "&units=metric";
         var id = "&appid=63f84bf0a28e379743bfedbc46ffb8d7"
         function weather(){
             var api2=document.getElementById("city").value;
             $.getJSON(api1+api2+metric+id, function (data) {
-            document.getElementById("name").innerHTML = "City: ".bold() + data.list[0].name + ", " + data.list[0].sys.country;
+            document.getElementById("minmax").innerHTML = "Min: ".bold() + data.list[0].main.temp_min + "°C" + "<br>Max: ".bold() + data.list[0].main.temp_max + "°C";
             document.getElementById("temp").innerHTML = "Temperature: ".bold() + data.list[0].main.temp + "°C";
             document.getElementById("wind").innerHTML = "Wind Speed: ".bold() + data.list[0].wind.speed + " m/s";
             document.getElementById("weather").innerHTML = "Forecast: ".bold() + data.list[0].weather[0].description;
@@ -71,12 +80,39 @@
             document.getElementById("windClip").src="https://dumielauxepices.net/sites/default/files/cloud-clipart-windy-896160-7673347.png";
             document.getElementById("windClip").style.height="50px";
             document.getElementById("windClip").style.width="50px";
+            
+            document.getElementById("minmaxClip").src="https://openclipart.org/image/2400px/svg_to_png/205610/1417539744.png";
+            document.getElementById("minmaxClip").style.height="50px";
+            document.getElementById("minmaxClip").style.width="40px";
 
             var countAPI1="https://www.countryflags.io/";
             var countAPI2="/shiny/48.png";
             document.getElementById('country').src=countAPI1+data.list[0].sys.country+countAPI2;
+            document.getElementById("name").innerHTML = "City: ".bold() + data.list[0].name + ", " + data.list[0].sys.country;
         });
         };
+        function day5(){
+            var api3=document.getElementById("city").value;
+            $.getJSON("http://api.openweathermap.org/data/2.5/forecast?q=" + api3 + "&units=metric&appid=63f84bf0a28e379743bfedbc46ffb8d7", function (data){
+                
+                var countAPI1="https://www.countryflags.io/";
+                var countAPI2="/shiny/48.png";
+                document.getElementById('country').src=countAPI1+data.city.country+countAPI2;
+                document.getElementById("name").innerHTML = "City: ".bold() + data.city.name + ", " + data.city.country;
+
+                document.getElementById("tempClip").src="http://openweathermap.org/img/w/" + data.list[0].weather[0].icon + ".png";
+                document.getElementById("minmaxClip").src="http://openweathermap.org/img/w/" + data.list[8].weather[0].icon + ".png";
+                document.getElementById("windClip").src="http://openweathermap.org/img/w/" + data.list[16].weather[0].icon + ".png";
+                document.getElementById("humidClip").src="http://openweathermap.org/img/w/" + data.list[24].weather[0].icon + ".png";
+                document.getElementById("iconHTML").src="http://openweathermap.org/img/w/" + data.list[32].weather[0].icon + ".png";
+
+                document.getElementById("temp").innerHTML = "Date: ".bold() + data.list[0].dt_txt + "<br> Temp: ".bold() + data.list[0].main.temp + "°C <br>" + "Forecast: ".bold() + data.list[0].weather[0].description;
+                document.getElementById("minmax").innerHTML = "Date: ".bold() + data.list[8].dt_txt + "<br> Temp: ".bold() + data.list[8].main.temp + "°C<br>" + "Forecast: ".bold() + data.list[8].weather[0].description;
+                document.getElementById("wind").innerHTML = "Date: ".bold() + data.list[16].dt_txt + "<br> Temp: ".bold() + data.list[16].main.temp + "°C<br>" + "Forecast: ".bold() + data.list[16].weather[0].description;
+                document.getElementById("humidity").innerHTML = "Date: ".bold() + data.list[24].dt_txt + "<br> Temp: ".bold() + data.list[24].main.temp + "°C<br>" + "Forecast: ".bold() + data.list[24].weather[0].description;
+                document.getElementById("weather").innerHTML = "Date: ".bold() + data.list[32].dt_txt + "<br> Temp: ".bold() + data.list[32].main.temp + "°C<br>" + "Forecast: ".bold() + data.list[32].weather[0].description;
+            }); 
+        }
         
     </script>
     
@@ -84,3 +120,4 @@
 
 </body>
 </html>
+
